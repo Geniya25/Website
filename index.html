@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VOIDKULT — Bold Gen-Z streetwear brand. Limited edition drops, exclusive collections, and underground culture. Join the void.">
+    <title>VOIDKULT — Streetwear Beyond Limits</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ============ PRELOADER ============ -->
+    <div id="preloader">
+        <div class="preloader-inner">
+            <span class="preloader-text" data-text="VOIDKULT">VOIDKULT</span>
+            <div class="preloader-bar"><div class="preloader-bar-fill"></div></div>
+        </div>
+    </div>
+
+    <!-- ============ CUSTOM CURSOR ============ -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-follower" id="cursor-follower"></div>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo" id="nav-logo">VOID<span>KULT</span></a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#drops" class="nav-link" id="nav-drops">NEW DROP</a></li>
+                <li><a href="#collection" class="nav-link" id="nav-collection">COLLECTION</a></li>
+                <li><a href="#lookbook" class="nav-link" id="nav-lookbook">LOOKBOOK</a></li>
+                <li><a href="#about" class="nav-link" id="nav-about">ABOUT</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="nav-cart" id="nav-cart" aria-label="Shopping cart">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 01-8 0"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ MOBILE MENU ============ -->
+    <div class="mobile-menu" id="mobile-menu">
+        <div class="mobile-menu-content">
+            <a href="#drops" class="mobile-link" id="mobile-drops">NEW DROP</a>
+            <a href="#collection" class="mobile-link" id="mobile-collection">COLLECTION</a>
+            <a href="#lookbook" class="mobile-link" id="mobile-lookbook">LOOKBOOK</a>
+            <a href="#about" class="mobile-link" id="mobile-about">ABOUT</a>
+        </div>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section id="hero">
+        <div class="hero-bg">
+            <img src="images/hero_model.png" alt="VOIDKULT streetwear model" id="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-tag" id="hero-tag">
+                <span class="tag-line"></span>
+                <span>SS26 COLLECTION</span>
+            </div>
+            <h1 class="hero-title" id="hero-title">
+                <span class="title-line" data-delay="0">WEAR</span>
+                <span class="title-line" data-delay="1">THE</span>
+                <span class="title-line accent" data-delay="2">VOID</span>
+            </h1>
+            <p class="hero-subtitle" id="hero-subtitle">Where underground culture meets premium streetwear. Limited drops. No restocks. Ever.</p>
+            <div class="hero-cta">
+                <a href="#drops" class="btn btn-primary" id="hero-cta-shop">SHOP THE DROP</a>
+                <a href="#lookbook" class="btn btn-outline" id="hero-cta-lookbook">LOOKBOOK →</a>
+            </div>
+        </div>
+        <div class="hero-scroll" id="hero-scroll">
+            <span>SCROLL</span>
+            <div class="scroll-line"></div>
+        </div>
+        <div class="hero-marquee">
+            <div class="marquee-track">
+                <span>VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE — VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE — VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE —&nbsp;</span>
+                <span>VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE — VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE — VOIDKULT — LIMITED EDITION — NO RESTOCKS — UNDERGROUND CULTURE —&nbsp;</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NEW DROP / COUNTDOWN SECTION ============ -->
+    <section id="drops">
+        <div class="section-container">
+            <div class="drop-header">
+                <div class="drop-label">
+                    <span class="pulse-dot"></span>
+                    <span>UPCOMING DROP</span>
+                </div>
+                <h2 class="section-title oversized" id="drops-title">NEW<br>DROP</h2>
+                <p class="drop-desc" id="drops-desc">The VOID ECLIPSE collection drops soon. 48 pieces. Once they're gone, they're gone forever.</p>
+            </div>
+            <div class="countdown-wrapper" id="countdown-wrapper">
+                <div class="countdown-item" id="countdown-days">
+                    <span class="countdown-number" data-target="days">00</span>
+                    <span class="countdown-label">DAYS</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item" id="countdown-hours">
+                    <span class="countdown-number" data-target="hours">00</span>
+                    <span class="countdown-label">HOURS</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item" id="countdown-minutes">
+                    <span class="countdown-number" data-target="minutes">00</span>
+                    <span class="countdown-label">MINS</span>
+                </div>
+                <div class="countdown-separator">:</div>
+                <div class="countdown-item" id="countdown-seconds">
+                    <span class="countdown-number" data-target="seconds">00</span>
+                    <span class="countdown-label">SECS</span>
+                </div>
+            </div>
+            <div class="drop-notify">
+                <input type="email" placeholder="GET NOTIFIED — ENTER YOUR EMAIL" class="notify-input" id="notify-email" aria-label="Email for drop notification">
+                <button class="btn btn-primary notify-btn" id="notify-btn">NOTIFY ME</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PRODUCT SHOWCASE ============ -->
+    <section id="collection">
+        <div class="section-container">
+            <div class="collection-header">
+                <h2 class="section-title oversized" id="collection-title">THE<br>COLLECTION</h2>
+                <div class="collection-filters" id="collection-filters">
+                    <button class="filter-btn active" data-filter="all" id="filter-all">ALL</button>
+                    <button class="filter-btn" data-filter="tops" id="filter-tops">TOPS</button>
+                    <button class="filter-btn" data-filter="bottoms" id="filter-bottoms">BOTTOMS</button>
+                    <button class="filter-btn" data-filter="accessories" id="filter-accessories">ACCESSORIES</button>
+                </div>
+            </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-category="tops" id="product-1">
+                    <div class="product-badge">LIMITED</div>
+                    <div class="product-image-container">
+                        <img src="images/product_hoodie.png" alt="VOID Eclipse Hoodie" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add" id="quick-add-1" aria-label="Quick add hoodie">+ QUICK ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">VOID ECLIPSE HOODIE</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$189</span>
+                            <span class="product-stock">12 LEFT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card" data-category="bottoms" id="product-2">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image-container">
+                        <img src="images/product_cargo.png" alt="Tactical Cargo Pants" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add" id="quick-add-2" aria-label="Quick add cargo">+ QUICK ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">TACTICAL CARGO PANTS</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$165</span>
+                            <span class="product-stock">8 LEFT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card" data-category="tops" id="product-3">
+                    <div class="product-image-container">
+                        <img src="images/product_tshirt.png" alt="Glitch Graphic Tee" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add" id="quick-add-3" aria-label="Quick add tshirt">+ QUICK ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">GLITCH GRAPHIC TEE</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$85</span>
+                            <span class="product-stock">24 LEFT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card" data-category="accessories" id="product-4">
+                    <div class="product-badge">SOLD OUT</div>
+                    <div class="product-image-container">
+                        <img src="images/product_cap.png" alt="Void Snapback Cap" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add sold-out" id="quick-add-4" aria-label="Sold out cap">SOLD OUT</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">VOID SNAPBACK CAP</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$55</span>
+                            <span class="product-stock sold">SOLD OUT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card" data-category="accessories" id="product-5">
+                    <div class="product-badge">LIMITED</div>
+                    <div class="product-image-container">
+                        <img src="images/product_sneakers.png" alt="Phantom High-Top Sneakers" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add" id="quick-add-5" aria-label="Quick add sneakers">+ QUICK ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">PHANTOM HIGH-TOPS</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$220</span>
+                            <span class="product-stock">5 LEFT</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card" data-category="tops" id="product-6">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image-container">
+                        <img src="images/product_bomber.png" alt="Shadow Bomber Jacket" class="product-img" loading="lazy">
+                        <div class="product-overlay">
+                            <button class="quick-add" id="quick-add-6" aria-label="Quick add bomber">+ QUICK ADD</button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">SHADOW BOMBER JACKET</h3>
+                        <div class="product-meta">
+                            <span class="product-price">$275</span>
+                            <span class="product-stock">3 LEFT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ LOOKBOOK / INSTAGRAM GALLERY ============ -->
+    <section id="lookbook">
+        <div class="section-container">
+            <div class="lookbook-header">
+                <h2 class="section-title oversized" id="lookbook-title">LOOK<br>BOOK</h2>
+                <p class="lookbook-desc" id="lookbook-desc">Shot in the streets. Worn by the culture. Follow <a href="#" class="accent-link">@VOIDKULT</a></p>
+            </div>
+            <div class="gallery-grid" id="gallery-grid">
+                <div class="gallery-item gallery-large" id="gallery-1">
+                    <img src="images/gallery1.png" alt="Street style 1" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-2">
+                    <img src="images/gallery2.png" alt="Street style 2" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-3">
+                    <img src="images/gallery3.png" alt="Street style details" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-4">
+                    <img src="images/gallery4.png" alt="Street style stairs" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-large" id="gallery-5">
+                    <img src="images/gallery5.png" alt="Skateboarding lifestyle" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+                <div class="gallery-item" id="gallery-6">
+                    <img src="images/gallery6.png" alt="Night street style" loading="lazy">
+                    <div class="gallery-overlay">
+                        <svg class="gallery-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                        </svg>
+                        <span>@VOIDKULT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ABOUT / BRAND STATEMENT ============ -->
+    <section id="about">
+        <div class="section-container">
+            <div class="about-content">
+                <div class="about-left">
+                    <h2 class="section-title oversized" id="about-title">ABOUT<br>THE<br>VOID</h2>
+                </div>
+                <div class="about-right" id="about-text">
+                    <div class="about-stat-group">
+                        <div class="about-stat" id="about-stat-1">
+                            <span class="stat-number" data-count="48">0</span>
+                            <span class="stat-label">PIECES PER DROP</span>
+                        </div>
+                        <div class="about-stat" id="about-stat-2">
+                            <span class="stat-number" data-count="0">0</span>
+                            <span class="stat-label">RESTOCKS EVER</span>
+                        </div>
+                        <div class="about-stat" id="about-stat-3">
+                            <span class="stat-number" data-count="100">0</span>
+                            <span class="stat-label">% UNDERGROUND</span>
+                        </div>
+                    </div>
+                    <p class="about-paragraph">VOIDKULT was born from the underground — from concrete skate parks, warehouse raves, and midnight street sessions. We don't follow trends. We set them on fire.</p>
+                    <p class="about-paragraph">Every piece is designed in-house, produced in micro-batches of 48, and never restocked. When it's gone, it's gone. That's not hype — that's a promise.</p>
+                    <a href="#" class="btn btn-outline about-btn" id="about-cta">OUR STORY →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ NEWSLETTER / CTA ============ -->
+    <section id="newsletter">
+        <div class="section-container">
+            <div class="newsletter-content" id="newsletter-content">
+                <h2 class="newsletter-title">JOIN THE <span class="accent">VOID</span></h2>
+                <p class="newsletter-desc">First access to drops. Exclusive content. No spam — just culture.</p>
+                <div class="newsletter-form">
+                    <input type="email" placeholder="YOUR EMAIL" class="newsletter-input" id="newsletter-email" aria-label="Newsletter email">
+                    <button class="btn btn-primary" id="newsletter-btn">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo" id="footer-logo">VOID<span>KULT</span></a>
+                    <p class="footer-tagline">Streetwear Beyond Limits</p>
+                </div>
+                <div class="footer-links-group">
+                    <div class="footer-col">
+                        <h4>SHOP</h4>
+                        <a href="#" id="footer-new-arrivals">New Arrivals</a>
+                        <a href="#" id="footer-tops">Tops</a>
+                        <a href="#" id="footer-bottoms">Bottoms</a>
+                        <a href="#" id="footer-accessories">Accessories</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>INFO</h4>
+                        <a href="#" id="footer-about-link">About Us</a>
+                        <a href="#" id="footer-shipping">Shipping</a>
+                        <a href="#" id="footer-returns">Returns</a>
+                        <a href="#" id="footer-faq">FAQ</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>CONNECT</h4>
+                        <a href="#" id="footer-instagram">Instagram</a>
+                        <a href="#" id="footer-tiktok">TikTok</a>
+                        <a href="#" id="footer-twitter">Twitter / X</a>
+                        <a href="#" id="footer-discord">Discord</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 VOIDKULT. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#" id="footer-privacy">Privacy</a>
+                    <a href="#" id="footer-terms">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
