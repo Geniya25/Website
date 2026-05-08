@@ -1204,6 +1204,62 @@ input {
 .newsletter-input::placeholder {
     color: var(--text-muted);
 }
+/* ============ CHATBOT SECTION ============ */
+#chatbot {
+    background: var(--bg-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+#chatbot::before {
+    content: 'CHAT';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: var(--font-display);
+    font-size: clamp(150px, 25vw, 400px);
+    color: rgba(255, 255, 255, 0.02);
+    letter-spacing: 0.1em;
+    pointer-events: none;
+}
+
+.chatbot-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.chatbot-desc {
+    font-size: 18px;
+    color: var(--text-secondary);
+    max-width: 550px;
+    margin: 20px auto 0;
+    line-height: 1.7;
+}
+
+.chatbot-wrapper {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+    background: var(--bg-secondary);
+    min-height: 700px;
+    box-shadow: 0 0 60px rgba(212, 255, 0, 0.05);
+    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.chatbot-wrapper:hover {
+    border-color: var(--accent);
+    box-shadow: 0 0 80px var(--accent-glow);
+}
+
+.chatbot-wrapper iframe {
+    display: block;
+    border: none;
+}
 
 /* ============ FOOTER ============ */
 #footer {
